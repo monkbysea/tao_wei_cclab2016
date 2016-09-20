@@ -46,7 +46,8 @@ $("document").ready(function() {
 //  }
 
  function draw(){
- 	strokeWeight(4);
+ 	// background(0,50);
+    strokeWeight(4);
 	stroke(255,100);
  	line(mouseX, mouseY, pmouseX, pmouseY);
  }
