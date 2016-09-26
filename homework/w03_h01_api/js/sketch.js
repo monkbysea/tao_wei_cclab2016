@@ -31,10 +31,12 @@ $("document").ready(function() {
 	randomSeed(4);
 	
 	for(var i=1;i<populationData.length;i++){
+		console.log("test");
+		var obj=populationData[i]; 
 		// console.log("test");
-		var obj=populationData[i]; //obj or obj[]?
 		var radius=obj[0];
 		var m=map(radius,0,15000000,0,100)
+		// console.log("test");
 		ellipse(random(width),random(height),m,m); //my intention is to draw 52 circles of various sizes based
 													//on the population of each state, the console doesn't return
 													//any errors. I wonder if there's something with the way I extract
