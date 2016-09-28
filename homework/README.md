@@ -3,6 +3,5 @@ I'm trying to visualize the state population data set I got from the US Census B
 I successfully got the data set as an array of arrays of JSON objects in the console. But I had trouble extracting the data through the chain method. 
 
 ###Week 4
-My circuit worked fine before I added the button. I'm trying to fix the problme but couldn't. i think my setup is right.
+https://vimeo.com/184617377
 
-https://vimeo.com/184544133
