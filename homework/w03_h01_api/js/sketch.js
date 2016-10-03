@@ -19,30 +19,53 @@ function gotData(data){
 	
 }
 
-$("document").ready(function() {
-            $("#myButton").click(function() {
-               		drawCircles();
-                    
-                });
-
-	drawCircles = function draw(){
-	if(populationData){
-	fill(255);
-	randomSeed(4);
-	
-	for(var i=1;i<populationData.length;i++){
-		console.log("test");
-		var obj=populationData[i]; 
-		// console.log("test");
-		var radius=obj[0];
-		var m=map(radius,0,15000000,0,100)
-		// console.log("test");
-		ellipse(random(width),random(height),m,m); //my intention is to draw 52 circles of various sizes based
-													//on the population of each state, the console doesn't return
-													//any errors. I wonder if there's something with the way I extract
-													//the data from the array
-	}
-	}
+document.getElementById('myButton').onclick=function(){
+	console.log("test")
 }
 
-});
+function draw(){
+
+	document.getElementById('myButton').onclick=function(){
+	
+		if(populationData){
+			fill(255);
+			randomSeed(4);
+			console.log("test");
+			
+			for(var i=1;i<populationData.length;i++){
+				console.log("test");
+				var obj=populationData[i]; 
+				// console.log("test");
+				var radius=obj[0];
+				var m=map(radius,0,15000000,0,100)
+				// console.log("test");
+				// strokeWeight(1);
+				// fill(255);
+				ellipse(random(width),random(height),m,m); //my intention is to draw 52 circles of various sizes based
+															//on the population of each state, the console doesn't return
+															//any errors. I wonder if there's something with the way I extract
+															//the data from the array
+			}
+		}
+	}
+	// if(populationData){
+	// fill(255);
+	// randomSeed(4);
+	// console.log("test");
+	
+	// for(var i=1;i<populationData.length;i++){
+	// 	console.log("test");
+	// 	var obj=populationData[i]; 
+	// 	// console.log("test");
+	// 	var radius=obj[0];
+	// 	var m=map(radius,0,15000000,0,100)
+	// 	// console.log("test");
+	// 	ellipse(random(width),random(height),m,m); //my intention is to draw 52 circles of various sizes based
+	// 												//on the population of each state, the console doesn't return
+	// 												//any errors. I wonder if there's something with the way I extract
+	// 												//the data from the array
+	// }
+	// }
+}
+
+
