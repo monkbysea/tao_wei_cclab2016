@@ -19,13 +19,14 @@ function gotData(data){
 	
 }
 
-document.getElementById('myButton').onclick=function(){
+
+$("#myButton").click(function(){
 	console.log("test")
-}
+})
 
 function draw(){
 
-	document.getElementById('myButton').onclick=function(){
+	$("#myButton").click(function(){
 	
 		if(populationData){
 			fill(255);
@@ -45,8 +46,33 @@ function draw(){
 															//on the population of each state;
 			}
 		}
-	}
+	});
 	
+	//clear the canvas
+	$("#clear").click(function(){
+		fill(0);
+		rect(0,0,width,height);
+	});
+
+	//choose color
+	$("#red").click(function(){
+		stroke(255,0,0);
+	});
+
+	$("#green").click(function(){
+		stroke(255,255,0);
+	});
+
+
+
+	
+}
+
+function mouseDragged() 
+{ 
+	
+	strokeWeight(10);
+	line(mouseX, mouseY, pmouseX, pmouseY);
 }
 
 
