@@ -1,25 +1,25 @@
 var color = $(".selected").css("background-color");
 
 
-function setup(){
-	var canvas=createCanvas(600,290);
-	canvas.parent('canvasWrapper');
-    background(68,61,52);
-  //   loadImage("img/frame.png", function(img) {  //can only load the image with local server
-  //   image(img, 0, 0);
-  // });
+function setup() {
+    var canvas = createCanvas(600, 290);
+    canvas.parent('canvasWrapper');
+    background(68, 61, 52);
+    //   loadImage("img/frame.png", function(img) {  //can only load the image with local server
+    //   image(img, 0, 0);
+    // });
 
-  	var frame = document.createElement("img"); //why if I include this in a function called loadFrame, it wont run?
-	frame.id="myFrame"
-	frame.src='img/frame.png';
-	frame.setAttribute("height", "650");
-	frame.setAttribute("width", "800");
-	frame.setAttribute("alt", "Frame");
-	frame.style.zIndex=-1;
-	frame.style.position="absolute";
-	frame.style.top=0;
-	frame.style.left=230;
-	$("#frameWrapper").append(frame);	
+    var frame = document.createElement("img"); //why if I include this in a function called loadFrame, it wont run?
+    frame.id = "myFrame"
+    frame.src = 'img/frame.png';
+    frame.setAttribute("height", "650");
+    frame.setAttribute("width", "800");
+    frame.setAttribute("alt", "Frame");
+    frame.style.zIndex = -1;
+    frame.style.position = "absolute";
+    frame.style.top = 0;
+    frame.style.left = 230;
+    $("#frameWrapper").append(frame);
 }
 
 //When clicking control list items
@@ -67,29 +67,34 @@ $("#addNewColor").click(function() {
 
 
 //When remove color is clicked
-$("#removeColor").click(function(){
-	$(".selected").hide();
+$("#removeColor").click(function() {
+    $(".selected").hide();
 });
 
-function draw(){
-	//clear the canvas
-	$("#clear").click(function(){
-		console.log("test");
-  		clear();
-  	});
-		
+function draw() {
+    //clear the canvas
+    $("#clear").click(function() {
+        console.log("test");
+        clear();
+    });
+
 }
 
 
-function mouseDragged() { 
-	strokeWeight(10);
-	stroke(color);
-	line(mouseX, mouseY, pmouseX, pmouseY);
-    
-  var audio=document.getElementById('sound');
-  audio.play();
-  
+function mouseDragged() {
+    strokeWeight(10);
+    stroke(color);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+
+    var audio = document.getElementById('sound');
+    audio.play();
+
 }
+
+
+
+
+//Experimenting 
 
 // var myWrapper=document.getElementById("canvasWrapper");
 // var isDragging=false;

@@ -1,71 +1,65 @@
 <html>
-<head>
-  <meta charset="UTF-8">
-  
-  
-  <!-- this line removes any default padding and style. you might only need one of these values set. -->
-  <style> body {padding: 0; margin: 0;} </style>
-  
-  <link rel="stylesheet" type="text/css" href="css/style.css">
 
-<!-- <script language="javascript" type="text/javascript" src="js/p5.js"></script>  
+<head>
+    <meta charset="UTF-8">
+    <!-- this line removes any default padding and style. you might only need one of these values set. -->
+    <style>
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <script language="javascript" type="text/javascript" src="js/p5.js"></script>  
 <script src="js/jquery-3.1.0.min.js"></script>
 <script language="javascript" type="text/javascript" src="js/sketch.js"></script> -->
-  
 </head>
 
 <body>
-	<audio id="sound" src="brush.mp3" preload="auto"></audio>
-	<div id='stage'>
-		<div id="frameWrapper">
-			<div id='canvasWrapper'></div>
-		</div>
-		<ul id="palette">
-				<li class="red selected"></li>
-				<li class="blue"></li>
-				<li class="yellow"></li>
-		</ul>
-		<div class="controls">
-			<button id="revealColorSelect">New Color</button>
-			<div id="colorSelect">
-				<span id="newColor"></span>
-				<div class="sliders">
-					<p>
-					<label for="red">Red</label>
-					<input id="red" name="red" type="range" min=0 max=255 value=0>
-					</p>
-					<p>
-					<label for="green">Green</label>
-					<input id="green" name="green" type="range" min=0 max=255 value=0>
-					</p>
-					<p>
-					<label for="blue">Blue</label>
-					<input id="blue" name="blue" type="range" min=0 max=255 value=0>
-					</p>
-					<p>
-					<label for="alpha">Alpha</label>
-					<input id="alpha" name="alpha" type="range" min=0 max=100 value=100>
-					</p>
-				</div>
-				<div>
-					<button id="addNewColor">Add Color</button>
-				</div>
-				
-			</div>	
-				
-				
-			<button id="removeColor" >Remove Color</button>
-			<button id="clear">Clear</button>
-		</div>		
-	</div>
-	
-			
-
-
-<!-- linking scripts -->
-<script src="js/jquery-3.1.0.min.js"></script>
-<script language="javascript" type="text/javascript" src="js/p5.js"></script>
-<script language="javascript" type="text/javascript" src="js/sketch.js"></script>
-
+    <audio id="sound" src="brush.mp3" preload="auto"></audio>
+    <div id='stage'>
+        <div id="frameWrapper">
+            <div id='canvasWrapper'></div>
+        </div>
+        <ul id="palette">
+            <li class="red selected"></li>
+            <li class="blue"></li>
+            <li class="yellow"></li>
+        </ul>
+        <div class="controls">
+            <button id="revealColorSelect">New Color</button>
+            <div id="colorSelect">
+                <span id="newColor"></span>
+                <div class="sliders">
+                    <p>
+                        <label for="red">Red</label>
+                        <input id="red" name="red" type="range" min=0 max=255 value=0>
+                    </p>
+                    <p>
+                        <label for="green">Green</label>
+                        <input id="green" name="green" type="range" min=0 max=255 value=0>
+                    </p>
+                    <p>
+                        <label for="blue">Blue</label>
+                        <input id="blue" name="blue" type="range" min=0 max=255 value=0>
+                    </p>
+                    <p>
+                        <label for="alpha">Alpha</label>
+                        <input id="alpha" name="alpha" type="range" min=0 max=100 value=100>
+                    </p>
+                </div>
+                <div>
+                    <button id="addNewColor">Add Color</button>
+                </div>
+            </div>
+            <button id="removeColor">Remove Color</button>
+            <button id="clear">Clear</button>
+        </div>
+    </div>
+    <!-- linking scripts -->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script language="javascript" type="text/javascript" src="js/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="js/sketch.js"></script>
 </body>
+
 </html>
